@@ -1,90 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate_Practice</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Puffin's × Cafeへようこそ！</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="image/favicon.ico">
+	<link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="js/slick.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
+<div id="wrapper">
+	<div id="top_menu" class="clearfix">
+		<header>
+			<h1><a href="index.html"><img src="image/puffin_logo_01.png" alt="Puffin's × Cafe"></a></h1>
+		</header>
+		<nav id="gnav">
+			<ul>
+	      <li><a href="index.html">ホーム<span>HOME</span></a></li>
+	      <li><a href="about.html">店舗紹介<span>ABOUT</span></a></li>
+	      <li><a href="menu.html">メニュー<span>MENU</span></a></li>
+	      <li><a href="news.html">新着情報<span>NEWS</span></a></li>
+	      <li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
+			</ul>
+		</nav>
+		<div id="sp_navi">
+			<div class="toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>menu</span>
+			</div>
+			<nav class="global_nav">
+        <ul>
+		        <li class="nav_li"><a href="index.html" class="spnav_click">HOME</a></li>
+		        <li class="nav_li"><a href="about.html" class="spnav_click">ABOUT</a></li>
+		        <li class="nav_li"><a href="menu.html" class="spnav_click">MENU</a></li>
+		        <li class="nav_li"><a href="news.html" class="spnav_click">NEWS</a></li>
+						<li class="nav_li"><a href="contact.html" class="spnav_click">CONTACT</a></li>
+						<li class="nav_li"><a href="#" class="spnav_click">RENTAL&nbsp;SPACE</a></li>
+						<li class="nav_li"><a href="#" class="spnav_click">Facebook</a></li>
+						<li class="nav_li"><a href="#" class="spnav_click">Twitter</a></li>
+						<li class="nav_li"><a href="#" class="spnav_click">Instagram</a></li>
+						<li class="nav_li"><a href="#" class="spnav_click">LINE</a></li>
+						<li class="nav_li"><a href="#" class="spnav_click">YouTube</a></li>
+      	</ul>
+      </nav>
+		</div>
+	</div>
+	<div id="graphic" class="clearfix">
+		<ul class="slider">
+			<li><a href="#"><img src="image/index_slide1.jpg" alt="メインビジュアルの画像1"></a></li>
+			<li><a href="#"><img src="image/index_slide2.jpg" alt="メインビジュアルの画像2"></a></li>
+			<li><a href="#"><img src="image/index_slide3.jpg" alt="メインビジュアルの画像3"></a></li>
+		</ul>
+	</div>
+
+<!--  #contents start  -->
+	<div id="contents" class="clearfix">
+
+<!--   #main start   -->
+		<div id="main" class="clearfix">
+			<div id="top_notes">
+				<h2>ごあいさつ</h2>
+				<p>
+					『 Puffin’s × Cafe 』は築100年の西洋建築をリノベーションして、2014年に開店いたしました。<br>
+					『 Puffin’s × Cafe 』では、シングルオリジンにこだわった自家焙煎のコーヒーを、
+					素材をいかした料理や自家製の焼き菓子やケーキとともにお召し上がりいただけます。<br>
+					お近くにお寄りの際は、ぜひお立ち寄りください。
+				</p>
+			</div>
+			<div id="menu_area" class="clearfix">
+				<h2>MENU</h2>
+				<div class="menu_box clearfix">
+					<div class="menu_text menu_odd">
+						<!--<a href="menu.html#menu_cafe">-->
+						<a href="menu.html">
+							<img src="image/menu_cafe.png" alt="カフェメニュー">
+							<p class="menu_text_absolute">Cafe
+								Menu</p>
+						</a>
+					</div>
+					<div class="menu_text menu_even">
+						<!--<a href="menu.html#menu_food">-->
+						<a href="menu.html">
+							<img src="image/menu_food.png" alt="フードメニュー">
+							<p class="menu_text_absolute">Food
+								Menu</p>
+						</a>
+					</div>
+				</div>
+				<div class="menu_box clearfix">
+					<div class="menu_text menu_odd">
+						<a href="#">
+							<img src="image/menu_takeout.png" alt="テイクアウトメニュー">
+							<p class="menu_text_absolute">Take
+								Out</p>
+						</a>
+					</div>
+					<div class="menu_text menu_even">
+						<a href="#">
+							<img src="image/menu_rental.png" alt="レンタルスペース">
+							<p class="menu_text_absolute">Rental
+								Space</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="news" class="clearfix">
+				<h2>NEWS</h2>
+				<div id="news_fig" class="clearfix">
+					<figure>
+						<a href="news.html">
+							<img src="image/news_montblanc.png" alt="NEWS画像1">
+							<p>10月限定！丹波産和栗のモンブラン始めました</p>
+						</a>
+					</figure>
+					<figure>
+						<a href="news.html">
+							<img src="image/news_stage.png" alt="NEWS画像2">
+							<p>11月イベント情報更新</p>
+						</a>
+					</figure>
+					<figure>
+						<a href="news.html">
+							<img src="image/news_coffee.png" alt="NEWS画像3">
+							<p>ハワイコナ入荷しました</p>
+						</a>
+					</figure>
+					<figure>
+						<a href="news.html">
+							<img src="image/index_news_img_hpnew.jpg" alt="NEWS画像4">
+							<p class="news_arrow">ホームページをリニューアルしました</p>
+						</a>
+					</figure>
+				</div>
+				<div id="and_more"><a href="news.html">もっと見る&nbsp;&gt;&gt;</a></div>
+			</div>
+		</div>
+<!--  #main end  -->
+
+<!--   #sidebar start   -->
+		<div id="sidebar" class="clearfix">
+			<div class="bnr_box">
+				<a href="#">
+					<img src="image/bnr_img_online.png" alt="サイドバーのバナー1">
+				</a>
+				<a href="#">
+					<img src="image/bnr_img_commitment.png" alt="サイドバーのバナー2">
+				</a>
+			</div>
+			<div class="bnr_box">
+				<a href="#">
+					<img src="image/bnr_img_stollen01.png" alt="サイドバーのバナー3">
+				</a>
+				<a href="#">
+					<img src="image/bnr_img_christmascake1.png" alt="サイドバーのバナー4">
+				</a>
+			</div>
+			<div class="bnr_box">
+				<a href="#">
+					<img src="image/bnr_img_fairtrade.png" alt="サイドバーバナー5">
+				</a>
+				<a href="#">
+					<img src="image/bnr_img_rainforest.png" alt="サイドバーバナー6">
+				</a>
+			</div>
+		</div>
+<!--   #sidebar end   -->
+
+<!--  #contact start  -->
+		<div id="contact">
+			<h2>CONTACT</h2>
+			<div id="contact_info" class="clearfix">
+				<address id="contact_tel">TEL:093-000-XXXX</address>
+				<p id="contact_add">〒000-0000 北九州市小倉北区魚町3-3-20</p>
+				<p>営業時間：モーニング	8:00～11:00</p>
+				<p class="contact_time_indent">ランチ　 11:00～14:00</p>
+				<p class="contact_time_indent">カフェ　 14:00～19:00</p>
+				<p>定 休 日：毎週第１・第３水曜日、年末年始</p>
+				<div id="contact_more">
+					<a href="contact.html">お問い合わせ	&gt;&gt;</a>
+				</div>
+				<div id="contact_sns_icon">
+					<a href="#"><img src="image/sns_facebook_icon.svg" alt="Facebookのアイコン"></a>
+					<a href="#"><img src="image/sns_twitter_icon.png" alt="Twitterのアイコン"></a>
+					<a href="#"><img src="image/sns_instagram_icon.png" alt="Instagramのアイコン"></a>
+					<a href="#"><img src="image/sns_line_icon.png" alt="ＬＩＮＥのアイコン"></a>
+					<a href="#"><img src="image/sns_youtube_icon.png" alt="You Tubeのアイコン"></a>
+				</div>
+			</div>
+			<div class="map clearfix">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.27350012464!2d130.87771051521057!3d33.882609380652326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bf528549a9eb%3A0xd5605e803a648dcd!2z44CSODAyLTAwMDYg56aP5bKh55yM5YyX5Lmd5bee5biC5bCP5YCJ5YyX5Yy66a2a55S677yT5LiB55uu77yT4oiS77yS77yQ!5e0!3m2!1sja!2sjp!4v1540174956519" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div><!--  #contact end  -->
+	</div><!--  #contents end  -->
+
+<!--  footer start  -->
+<footer>
+	<nav id="fnav" class="clearfix">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="news.html">NEWS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="#">RENTAL&nbsp;SPACE</a></li>
+		</ul>
+	</nav>
+	<p id="top_scroll" class="pagetop"><a href="#top_menu" id="page-top1"><img src="image/footer_img_arrow.png" alt="ページの先頭へ戻る"></a></p>
+	<p id="copyright">Copyright&copy;2014 Puffin's&times;Cafe All rights reserved.</p>
+</footer> <!--  footer end  -->
+</div> <!--  wrapper end  -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/top_scroll.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 </body>
 </html>
